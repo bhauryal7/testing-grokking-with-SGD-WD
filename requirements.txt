@@ -1,0 +1,16 @@
+# Environment for Grokking_Analysis.ipynb / Non_Modular_Addition_Grokking_Tasks.ipynb
+# Python 3.11. Intel macOS (x86_64): torch is pinned to 2.2.2, the last release
+# with macOS x86_64 wheels; it also defaults to weights_only=False on torch.load,
+# which this repo's checkpoint dicts rely on.
+torch==2.2.2
+numpy==1.26.4
+pandas==2.3.3
+plotly==7.1.0
+kaleido==0.2.1
+einops==0.8.2
+tqdm==4.70.1
+matplotlib==3.11.2
+# ipykernel must stay <7: v7 registers the 5.5 protocol with `curve` encryption,
+# which the VS Code Jupyter extension cannot start/discover.
+ipykernel==6.31.0
+jupyter==1.1.1
